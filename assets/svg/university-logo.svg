@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80" role="img" aria-labelledby="uniTitle">
+  <title id="uniTitle">Logo Universidad Continental (placeholder)</title>
+  <rect width="240" height="80" rx="8" fill="#123c4a" />
+  <text x="50%" y="55%" font-size="18" text-anchor="middle" fill="#fff" font-family="Arial,Helvetica,sans-serif">Universidad Continental</text>
+  <!-- Reemplaza este archivo por el logo oficial de la universidad (mismo nombre: assets/svg/university-logo.svg) -->
+</svg>

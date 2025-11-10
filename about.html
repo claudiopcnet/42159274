@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="Página acerca: incluye tabla estilizada y metadatos.">
+	<title>Diseño Web — Acerca</title>
+	<link rel="icon" href="assets/svg/favicon.svg" type="image/svg+xml">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="brand">
+			<img src="assets/img/logo_ico.png" alt="Logo Diseño Web" class="logo">
+			<h1>Diseño Web</h1>
+			<img src="assets/img/logo.png" alt="Logo Universidad Continental" class="uni-logo">
+		</div>
+		<nav class="main-nav" aria-label="Navegación principal">
+			<a href="index.html">Inicio</a>
+			<a href="about.html" class="active">Acerca</a>
+			<a href="gallery.html">Galería</a>
+			<a href="resources.html">Recursos</a>
+		</nav>
+		<div class="project-info" aria-label="Información del proyecto">
+			<strong>Curso:</strong> Diseño Web &nbsp;|&nbsp; <strong>NRC:</strong> 73229 &nbsp;|&nbsp; <strong>Producto:</strong> Producto Académico 2<br>
+			<strong>Estudiante:</strong> Claudio Ludwin Orós Vengoa &nbsp;|&nbsp; <strong>Institución:</strong> Universidad Continental
+		</div>
+	</header>
+
+	<main class="container">
+		<h2>Acerca del proyecto</h2>
+		<p>Demostración de elementos avanzados de HTML5 y CSS3. Aquí mostramos una tabla con estilos personalizados.</p>
+
+		<section>
+			<h3>Comparativa de técnicas</h3>
+			<table class="styled-table" summary="Tabla comparativa de técnicas HTML y CSS">
+				<thead>
+					<tr>
+						<th>Técnica</th>
+						<th>Propósito</th>
+						<th>Compatibilidad</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>&lt;picture&gt; / srcset</td>
+						<td>Imágenes adaptativas</td>
+						<td>Alta (navegadores modernos)</td>
+					</tr>
+					<tr>
+						<td>SVG</td>
+						<td>Gráficos escalables y accesibles</td>
+						<td>Alta</td>
+					</tr>
+					<tr>
+						<td>Image map</td>
+						<td>Imagen interactiva con áreas clicables</td>
+						<td>Moderada</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section>
+			<h3>Metadatos</h3>
+			<ul>
+				<li>Favicon en <code>assets/svg/favicon.svg</code></li>
+				<li>Meta description y meta viewport incluidos</li>
+			</ul>
+		</section>
+
+		<section>
+			<h3>Explicación de los elementos del sitio (requerimiento por requerimiento)</h3>
+			<ol>
+				<li><strong>Imágenes y multimedia:</strong> Se usan <code>&lt;figure&gt;</code> y <code>&lt;figcaption&gt;</code> en galerías, <code>&lt;picture&gt;</code> y <code>srcset</code> para imágenes adaptativas (ver <code>index.html</code> y <code>resources.html</code>). Además existe un image map interactivo en <code>gallery.html</code> que utiliza <code>&lt;map&gt;</code> y <code>&lt;area&gt;</code>.</li>
+				<li><strong>SVG y gráficos:</strong> El proyecto incluye SVGs propios en <code>assets/svg/</code> (logo, mapa y nuevos iconos). También se añadió <code>house-plan.svg</code> y se usa como imagen con <code>usemap</code> para áreas clicables.</li>
+				<li><strong>Animaciones y transiciones:</strong> El logo tiene una animación de flotación (keyframes) y hay transiciones en hover para imágenes y tarjetas. Revisa <code>assets/css/styles.css</code> para ver las reglas.</li>
+				<li><strong>Tablas y formularios:</strong> Se añadió una tabla estilizada en <code>about.html</code> (comparativa). Hay múltiples formularios: el formulario de contacto en <code>gallery.html</code>, cuestionario y entrega en <code>resources.html</code>, y el formulario principal con 4 campos. Todos los campos tienen etiquetas accesibles y atributos adecuados.</li>
+				<li><strong>Metadatos:</strong> Cada página incluye <code>&lt;meta&gt;</code> relevantes, y se añadió un favicon SVG <code>assets/svg/favicon.svg</code>.</li>
+				<li><strong>Maquetación y diseño responsivo:</strong> Estructura semántica con <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>. La navegación es coherente entre páginas y el CSS contiene media queries para adaptar el layout (incluyendo el apilado del header desde 950px).</li>
+				<li><strong>Accesibilidad:</strong> Uso de textos alternativos en imágenes, labels en formularios, roles y aria-labels en la navegación. Es recomendable ejecutar una auditoría (Lighthouse o WAVE) para ajustes finos.</li>
+			</ol>
+		</section>
+
+	</main>
+
+	<footer class="site-footer">
+		<p>© 2025 Diseño Web — Sitio de ejemplo</p>
+	</footer>
+	<script src="assets/js/main.js" defer></script>
+</body>
+</html>

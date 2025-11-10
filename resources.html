@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="Recursos de la Guía de Diseño Web: galería, SVGs y formularios.">
+	<title>Diseño Web — Recursos</title>
+	<link rel="icon" href="assets/svg/favicon.svg" type="image/svg+xml">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="brand">
+			<img src="assets/img/logo_ico.png" alt="Logo Diseño Web" class="logo">
+			<h1>Diseño Web</h1>
+			<img src="assets/img/logo.png" alt="Logo Universidad Continental" class="uni-logo">
+		</div>
+		<nav class="main-nav" aria-label="Navegación principal">
+			<a href="index.html">Inicio</a>
+			<a href="about.html">Acerca</a>
+			<a href="gallery.html">Galería</a>
+			<a href="resources.html" class="active">Recursos</a>
+		</nav>
+		<div class="project-info" aria-label="Información del proyecto">
+			<strong>Curso:</strong> Diseño Web &nbsp;|&nbsp; <strong>NRC:</strong> 73229 &nbsp;|&nbsp; <strong>Producto:</strong> Producto Académico 2<br>
+			<strong>Estudiante:</strong> Claudio Ludwin Orós Vengoa &nbsp;|&nbsp; <strong>Institución:</strong> Universidad Continental
+		</div>
+	</header>
+
+	<main class="container">
+		<h2>Recursos — Guía de Diseño Web</h2>
+
+		<section class="gallery">
+			<h3>Galería de imágenes</h3>
+			<p>Imágenes de ejemplo (descargadas en <code>assets/img/</code>).</p>
+			<div class="grid">
+				<figure>
+					<picture>
+						<source srcset="assets/img/design-1200.jpg" media="(min-width:800px)">
+						<img src="assets/img/design-1200.jpg" alt="Diseño ejemplo" loading="lazy">
+					</picture>
+					<figcaption>Diseño de interfaz (1200×800)</figcaption>
+				</figure>
+				<figure>
+					<picture>
+						<source srcset="assets/img/layout-800.jpg" media="(min-width:800px)">
+						<img src="assets/img/layout-800.jpg" alt="Layout ejemplo" loading="lazy">
+					</picture>
+					<figcaption>Layout y grid</figcaption>
+				</figure>
+				<figure>
+					<picture>
+						<source srcset="assets/img/typography-800.jpg" media="(min-width:800px)">
+						<img src="assets/img/typography-800.jpg" alt="Tipografía" loading="lazy">
+					</picture>
+					<figcaption>Tipografía</figcaption>
+				</figure>
+				<figure>
+					<picture>
+						<source srcset="assets/img/colors-800.jpg" media="(min-width:800px)">
+						<img src="assets/img/colors-800.jpg" alt="Paleta de colores" loading="lazy">
+					</picture>
+					<figcaption>Paleta de colores</figcaption>
+				</figure>
+				<figure>
+					<picture>
+						<source srcset="assets/img/responsive-800.jpg" media="(min-width:800px)">
+						<img src="assets/img/responsive-800.jpg" alt="Responsive" loading="lazy">
+					</picture>
+					<figcaption>Diseño responsive</figcaption>
+				</figure>
+				<figure>
+					<picture>
+						<source srcset="assets/img/card-800.jpg" media="(min-width:800px)">
+						<img src="assets/img/card-800.jpg" alt="Tarjeta de proyecto" loading="lazy">
+					</picture>
+					<figcaption>Ejemplo de tarjeta</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<section>
+			<h3>SVGs</h3>
+			<p>Iconos y diagramas creados en SVG.</p>
+			<div class="svg-row">
+				<img src="assets/svg/icon-design.svg" alt="Icono diseño" width="120">
+				<img src="assets/svg/icon-forms.svg" alt="Icono formularios" width="120">
+			</div>
+		</section>
+
+		<section>
+			<h3>Formularios adicionales</h3>
+			<div class="forms-grid">
+				<article>
+					<h4>Cuestionario de auto-evaluación</h4>
+					<form action="#" method="post" class="quiz-form">
+						<fieldset>
+							<legend>1. ¿Qué unidad CSS se recomienda para responsive?</legend>
+							<label><input type="radio" name="q1" value="rem"> rem</label>
+							<label><input type="radio" name="q1" value="px"> px</label>
+							<label><input type="radio" name="q1" value="in"> in</label>
+						</fieldset>
+						<fieldset>
+							<legend>2. ¿Qué etiqueta se usa para figuras con pie?</legend>
+							<label><input type="checkbox" name="q2" value="figure"> figure</label>
+							<label><input type="checkbox" name="q2" value="section"> section</label>
+						</fieldset>
+						<div class="form-row"><button class="btn" type="submit">Enviar respuestas</button></div>
+					</form>
+				</article>
+
+				<article>
+					<h4>Entrega de ejercicio</h4>
+					<form action="#" method="post" enctype="multipart/form-data" class="submit-form">
+						<div class="form-row">
+							<label for="stu">Nombre</label>
+							<input id="stu" name="stu" required>
+						</div>
+						<div class="form-row">
+							<label for="email2">Correo</label>
+							<input id="email2" name="email2" type="email" required>
+						</div>
+						<div class="form-row">
+							<label for="file">Archivo (ZIP/PDF)</label>
+							<input id="file" name="file" type="file" accept=".zip,.pdf" required>
+						</div>
+						<div class="form-row"><button class="btn" type="submit">Enviar entrega</button></div>
+					</form>
+				</article>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="site-footer">
+		<p>© 2025 Diseño Web — Recursos</p>
+	</footer>
+	<script src="assets/js/main.js" defer></script>
+</body>
+</html>

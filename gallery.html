@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="Galería: incluye image map interactivo, formulario de contacto y un SVG propio.">
+	<title>Diseño Web — Galería</title>
+	<link rel="icon" href="assets/svg/favicon.svg" type="image/svg+xml">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="brand">
+			<img src="assets/img/logo_ico.png" alt="Logo Diseño Web" class="logo">
+			<h1>Diseño Web</h1>
+			<img src="assets/img/logo.png" alt="Logo Universidad Continental" class="uni-logo">
+		</div>
+		<nav class="main-nav" aria-label="Navegación principal">
+			<a href="index.html">Inicio</a>
+			<a href="about.html">Acerca</a>
+			<a href="gallery.html" class="active">Galería</a>
+			<a href="resources.html">Recursos</a>
+		</nav>
+		<div class="project-info" aria-label="Información del proyecto">
+			<strong>Curso:</strong> Diseño Web &nbsp;|&nbsp; <strong>NRC:</strong> 73229 &nbsp;|&nbsp; <strong>Producto:</strong> Producto Académico 2<br>
+			<strong>Estudiante:</strong> Claudio Ludwin Orós Vengoa &nbsp;|&nbsp; <strong>Institución:</strong> Universidad Continental
+		</div>
+	</header>
+
+	<main class="container">
+		<h2>Galería interactiva</h2>
+
+		<section>
+			<h3>Mapa interactivo (image map)</h3>
+			<!-- La imagen SVG funciona con usemap para crear áreas clicables -->
+			<img src="assets/svg/map.svg" alt="Mapa de ejemplo" usemap="#landmap" class="map-image">
+
+			<map name="landmap" id="landmap">
+				<area shape="rect" coords="60,60,240,260" href="#montana" alt="Montaña" title="Montaña">
+				<area shape="circle" coords="520,140,60" href="#sol" alt="Sol" title="Sol">
+			</map>
+
+			<div class="map-info">
+				<h4 id="montana">Montaña</h4>
+				<p>Área interactiva que enlaza a una sección de la página.</p>
+				<h4 id="sol">Sol</h4>
+				<p>Otra área interactiva (círculo).</p>
+			</div>
+		</section>
+
+		<section>
+			<h3>Plano de casa interactivo</h3>
+			<p>Plano de muestra con áreas clicables (Sala, Cocina, Comedor, Dormitorios, Baño). Pasa el cursor sobre las áreas para ver el resaltado.</p>
+
+			<div class="plan-wrapper">
+				<!-- Inline SVG para permitir resaltar áreas en hover y accesibilidad -->
+				<svg id="housePlan" xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" class="map-image" role="img" aria-labelledby="hpTitleInline">
+					<title id="hpTitleInline">Plano de casa interactivo</title>
+					<rect width="800" height="600" fill="#f6fbfb"/>
+					<rect x="40" y="320" width="720" height="240" fill="#fff" stroke="#cde" stroke-width="2" rx="8"/>
+
+					<a xlink:href="#sala" class="plan-link"><rect id="rect-sala" class="plan-area" x="60" y="340" width="220" height="160" fill="#e8f6f6" stroke="#9ec"/></a>
+					<text x="170" y="420" text-anchor="middle" font-size="18" fill="#234">Sala</text>
+
+					<a xlink:href="#cocina" class="plan-link"><rect id="rect-cocina" class="plan-area" x="300" y="340" width="180" height="160" fill="#fff2e8" stroke="#f1c"/></a>
+					<text x="390" y="420" text-anchor="middle" font-size="18" fill="#234">Cocina</text>
+
+					<a xlink:href="#comedor" class="plan-link"><rect id="rect-comedor" class="plan-area" x="500" y="340" width="220" height="160" fill="#e8f6f6" stroke="#9ec"/></a>
+					<text x="610" y="420" text-anchor="middle" font-size="18" fill="#234">Comedor</text>
+
+					<a xlink:href="#d1" class="plan-link"><rect id="rect-d1" class="plan-area" x="60" y="120" width="240" height="180" fill="#fff8e6" stroke="#edc"/></a>
+					<text x="180" y="210" text-anchor="middle" font-size="18" fill="#234">Dormitorio 1</text>
+
+					<a xlink:href="#d2" class="plan-link"><rect id="rect-d2" class="plan-area" x="320" y="120" width="240" height="180" fill="#e6f7ff" stroke="#9ec"/></a>
+					<text x="440" y="210" text-anchor="middle" font-size="18" fill="#234">Dormitorio 2</text>
+
+					<a xlink:href="#bano" class="plan-link"><rect id="rect-bano" class="plan-area" x="580" y="120" width="140" height="80" fill="#f7eef6" stroke="#e9c"/></a>
+					<text x="650" y="165" text-anchor="middle" font-size="16" fill="#234">Baño</text>
+				</svg>
+				<div id="plan-tooltip" role="status" aria-live="polite" class="plan-tooltip" hidden></div>
+			</div>
+
+			<div class="map-info">
+				<h4 id="sala">Sala</h4>
+				<p>Espacio principal de reunión — ejemplo de área interactiva en un plano SVG.</p>
+				<h4 id="cocina">Cocina</h4>
+				<p>Zona de preparación y servicios.</p>
+				<h4 id="comedor">Comedor</h4>
+				<p>Área para alimentación y conexión con la sala.</p>
+				<h4 id="d1">Dormitorio 1</h4>
+				<p>Habitación principal.</p>
+				<h4 id="d2">Dormitorio 2</h4>
+				<p>Segunda habitación.</p>
+				<h4 id="bano">Baño</h4>
+				<p>Servicios sanitarios.</p>
+			</div>
+		</section>
+
+		<section>
+			<h3>Más imágenes</h3>
+			<p>Galería ampliada con imágenes de ejemplo (puedes reemplazarlas por JPG/PNG a tu gusto).</p>
+			<div class="grid">
+				<figure>
+					<img src="assets/img/design-1200.jpg" alt="Diseño ejemplo" loading="lazy">
+					<figcaption>Mockup UI</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/img/layout-800.jpg" alt="Layout" loading="lazy">
+					<figcaption>Grid y layout</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/img/typography-800.jpg" alt="Tipografía" loading="lazy">
+					<figcaption>Tipografía</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/img/colors-800.jpg" alt="Colores" loading="lazy">
+					<figcaption>Paleta de colores</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/img/responsive-800.jpg" alt="Responsive" loading="lazy">
+					<figcaption>Responsive</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/img/card-800.jpg" alt="Tarjeta" loading="lazy">
+					<figcaption>Tarjeta de proyecto</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<section class="contact">
+			<h3>Formulario de contacto</h3>
+			<form action="#" method="post" class="contact-form" novalidate>
+				<div class="form-row">
+					<label for="name">Nombre</label>
+					<input id="name" name="name" type="text" required placeholder="Tu nombre">
+				</div>
+				<div class="form-row">
+					<label for="email">Correo</label>
+					<input id="email" name="email" type="email" required placeholder="tu@ejemplo.com">
+				</div>
+				<div class="form-row">
+					<label for="topic">Tema</label>
+					<select id="topic" name="topic">
+						<option value="general">General</option>
+						<option value="feedback">Retroalimentación</option>
+						<option value="bug">Reporte de error</option>
+					</select>
+				</div>
+				<div class="form-row">
+					<label for="message">Mensaje</label>
+					<textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje"></textarea>
+				</div>
+				<div class="form-row">
+					<button type="submit" class="btn">Enviar</button>
+				</div>
+			</form>
+		</section>
+
+	</main>
+
+	<footer class="site-footer">
+		<p>© 2025 Diseño Web — Sitio de ejemplo</p>
+	</footer>
+	<script src="assets/js/main.js" defer></script>
+</body>
+</html>

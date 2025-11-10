@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="Sitio demo que usa elementos avanzados de HTML5 y CSS3: imágenes adaptativas, SVG, animaciones, tablas y formularios.">
+	<title>Diseño Web — Inicio</title>
+	<link rel="icon" href="assets/svg/favicon.svg" type="image/svg+xml">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<div class="brand">
+			<img src="assets/img/logo_ico.png" alt="Logo Diseño Web" class="logo">
+			<h1>Diseño Web</h1>
+			<img src="assets/img/logo.png" alt="Logo Universidad Continental" class="uni-logo">
+		</div>
+		<nav class="main-nav" aria-label="Navegación principal">
+			<a href="index.html" class="active">Inicio</a>
+			<a href="about.html">Acerca</a>
+			<a href="gallery.html">Galería</a>
+			<a href="resources.html">Recursos</a>
+		</nav>
+		<div class="project-info" aria-label="Información del proyecto">
+			<strong>Curso:</strong> Diseño Web &nbsp;|&nbsp; <strong>NRC:</strong> 73229 &nbsp;|&nbsp; <strong>Producto:</strong> Producto Académico 2<br>
+			<strong>Estudiante:</strong> Claudio Ludwin Orós Vengoa &nbsp;|&nbsp; <strong>Institución:</strong> Universidad Continental
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<figure>
+				<picture>
+					<source srcset="assets/img/illustration-800.svg" media="(min-width:800px)">
+					<source srcset="assets/img/illustration-400.svg" media="(min-width:400px)">
+					<img src="assets/img/illustration-400.svg" alt="Ilustración adaptativa" class="hero-img">
+				</picture>
+				<figcaption>Ilustración adaptativa con <code>&lt;picture&gt;</code> y <code>srcset</code>.</figcaption>
+			</figure>
+			<div class="hero-text">
+				<h2>Ejemplo práctico de HTML5 y CSS3</h2>
+				<p>Este sitio muestra el uso de elementos semánticos, imágenes adaptativas, SVG, animaciones y formularios accesibles.</p>
+				<a class="cta" href="gallery.html">Ver Galería</a>
+			</div>
+		</section>
+
+		<section class="features">
+			<article>
+				<h3>Multimedia y accesibilidad</h3>
+				<p>Uso de <code>&lt;figure&gt;</code>, <code>&lt;figcaption&gt;</code> y controles visuales con CSS.</p>
+			</article>
+			<article>
+				<h3>Diseño responsivo</h3>
+				<p>Media queries, unidades relativas y diseño fluido para móvil y escritorio.</p>
+			</article>
+			<article>
+				<h3>Animaciones</h3>
+				<p>Transiciones y keyframes para mejorar la experiencia.</p>
+			</article>
+		</section>
+
+		<section class="highlights">
+			<h3>Destacados</h3>
+			<div class="highlight-row">
+				<div class="card">
+					<img src="assets/img/design-1200.jpg" alt="Mockup" loading="lazy">
+					<h4>Ejemplos visuales</h4>
+					<p>Imágenes adaptativas y SVGs para mostrar técnicas de diseño.</p>
+				</div>
+				<div class="card">
+					<img src="assets/img/layout-800.jpg" alt="Layout" loading="lazy">
+					<h4>Layouts y grids</h4>
+					<p>Demostraciones de uso de grid y flexbox para maquetación.</p>
+				</div>
+				<div class="card">
+					<img src="assets/img/typography-800.jpg" alt="Tipografía" loading="lazy">
+					<h4>Tipografía</h4>
+					<p>Buenas prácticas en selección y escala tipográfica.</p>
+				</div>
+			</div>
+			<p class="cta-row"><a class="cta" href="resources.html">Ver recursos y formularios</a></p>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>© 2025 Diseño Web — Sitio de ejemplo</p>
+	</footer>
+	<script src="assets/js/main.js" defer></script>
+</body>
+</html>

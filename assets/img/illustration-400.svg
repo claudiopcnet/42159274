@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="260" viewBox="0 0 400 260" role="img" aria-labelledby="ill400">
+  <title id="ill400">Ilustración pequeña</title>
+  <defs>
+    <linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#2b7a78"/><stop offset="1" stop-color="#5ac8c7"/></linearGradient>
+  </defs>
+  <rect width="400" height="260" fill="#f3fbfb"/>
+  <g transform="translate(20,40)">
+    <rect width="120" height="120" rx="14" fill="url(#lg)" opacity="0.95"/>
+    <circle cx="240" cy="60" r="40" fill="#ffd166"/>
+    <text x="10" y="170" font-family="sans-serif" font-size="20" fill="#234">Ilustración adaptativa (400px)</text>
+  </g>
+</svg>
